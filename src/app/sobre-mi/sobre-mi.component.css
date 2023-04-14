@@ -127,15 +127,6 @@ main {
 }
 
 
-.color1 {
-    color: #63CCCA;
-}
-
-.color2 {
-    color: #FF7474;
-}
-
-
 @media screen and (min-width: 929px) and (max-width: 1700px) {
 
     .paragraph-body {

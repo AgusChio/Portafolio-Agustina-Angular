@@ -1,0 +1,89 @@
+.container-cards-proyects::before {
+    content: '<section>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 2rem;
+}
+
+.container-cards-proyects::after {
+    content: '</section>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 105rem;
+    left: 3rem;
+}
+
+.box,
+.box-2,
+.box-3 {
+    transition: box-shadow .3s;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    background: #000000;
+    float: left;
+}
+
+.box:hover {
+    box-shadow: 3px 3px 11px #63CCCA;
+}
+
+.box-2:hover {
+    box-shadow: 3px 3px 11px #FF7474;
+}
+
+.box-3:hover {
+    box-shadow: 3px 3px 11px #F59B71;
+}
+
+.btn-primary {
+    background-color: #63CCCA;
+    border: none;
+    height: 5vh;
+}
+
+.btn-primary:hover {
+    transition: .3s;
+    background-color: #468d8c;
+}
+
+.btn-primary-2 {
+    background-color: #FF7474;
+    color: #FFF;
+    height: 5vh;
+}
+
+.btn-primary-2:hover {
+    background-color: #c35f5f;
+    color: white;
+}
+
+.btn-primary-3 {
+    background-color: #F59B71;
+    color: #FFF;
+    height: 5vh;
+}
+
+.btn-primary-3:hover {
+    background-color: #ce8766;
+    color: white;
+}
+
+@media screen and (min-width: 929px) and (max-width: 1700px) {
+    .container-cards-proyects::before{
+        left: 22rem;
+    }
+
+    .container-cards-proyects::after{
+        margin-top: 45rem;
+        left: 22rem;
+    }
+}

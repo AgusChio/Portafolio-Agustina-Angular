@@ -39,14 +39,6 @@ h1::after {
     left: 3rem;
 }
 
-.color1 {
-    color: #63CCCA;
-}
-
-.color2 {
-    color: #FF7474;
-}
-
 .paragraph-body::before {
     content: '<p>';
     font-family: 'Genos', sans-serif;

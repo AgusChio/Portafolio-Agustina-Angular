@@ -82,6 +82,10 @@ a.izdadcha:hover:after {
     left: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 @media screen and (min-width: 929px) and (max-width: 1700px) {
     .navbar,

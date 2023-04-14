@@ -1,0 +1,122 @@
+.paragraph-main-certifications::before{
+    content: '<p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 2rem;
+}
+
+.paragraph-main-certifications::after{
+    content: '</p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 2rem;
+    left: 2rem;
+}
+
+.img-certification{
+    width: 90%;
+}
+
+.title-certification::before{
+    content: '<h3>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 2rem;
+}
+
+
+.title-certification::after{
+    content: '</h3>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 2rem;
+    left: 2rem;
+}
+
+.title-certification-2::before{
+    content: '<h3>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 2rem;
+}
+
+.title-certification-2::after{
+    content: '</h3>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 2rem;
+    left: 2rem;
+}
+
+@media screen and (min-width: 929px) and (max-width: 1700px) {
+    .img-certification{
+        width: 40%;
+    }
+
+    .certifications{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .container-title-img-certification{
+        width: 50% !important;
+    }
+
+    .paragraph-main-certifications::before{
+        margin-top: -2rem;
+        left: 18rem;
+    }
+
+    .paragraph-main-certifications::after{
+        margin-top: 2rem;
+        left: 18rem;
+    }
+
+    .title-certification::before{
+        margin-top: -2rem;
+        left: 22rem;
+    }
+
+    .title-certification::after{
+        margin-top: 2rem;
+        left: 22rem;
+    }
+
+    .title-certification-2::before{
+        margin-top: -2rem;
+        left: 59rem;
+    }
+
+    .title-certification-2::after{
+        margin-top: 2rem;
+        left: 59rem;
+    }
+}

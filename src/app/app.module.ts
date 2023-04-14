@@ -11,6 +11,7 @@ import { CertificacionesComponent } from './certificaciones/certificaciones.comp
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { MainComponent } from './main/main.component';
+import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MainComponent } from './main/main.component';
     ProyectosComponent,
     ContactoComponent,
     MainComponent,
+    ScrollToTopComponent,
   ],
   imports: [
     BrowserModule,

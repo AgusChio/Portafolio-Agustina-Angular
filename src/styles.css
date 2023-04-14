@@ -12,6 +12,7 @@
 html {
     font-family: 'Ubuntu', sans-serif;
     background-color: #191D24;
+    scroll-behavior: smooth;
 }
 
 h2::before {
@@ -41,4 +42,37 @@ h2::after {
     font-weight: 700;
     font-size: 3rem;
     margin-top: 2rem;
+}
+
+.color1 {
+    color: #63CCCA;
+}
+
+.color2 {
+    color: #FF7474;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: -100%;
+    right: 1.5rem;
+    z-index: 1000;
+}
+
+.scroll-top .bx {
+    padding: 8px;
+    font-size: 2rem;
+    color: white;
+    background: #63CCCA;
+    border-radius: 0.2rem;
+}
+
+.scroll-top .bx:hover {
+    background: #468d8c;
+    transition: 0.3s;
+}
+
+.scroll-active {
+    bottom: 2rem;
+    transition: 0.3s;
 }
