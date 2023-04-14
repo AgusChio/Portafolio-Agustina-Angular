@@ -1,12 +1,12 @@
 <div class="container-contact">
     <h2 class="subtitle1 p-5 w-100 d-flex justify-content-center" id="contacto"> Contacto </h2>
     <div class="container-form-contact-info">
-        <form class="contact-form w-100 d-flex justify-content-center flex-column p-3 mt-2" id="contact-form">
-            <input type="text" placeholder="Tu nombre" class="name bg-dark text-light border-danger-subtle mb-4 p-2 rounded-2" required>
-            <input type="email" name="" placeholder="Tu correo" class="email bg-dark text-light border-danger-subtle mb-4 p-2 rounded-2" required>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escríbeme un mensaje aquí" class="message bg-dark text-light border-danger-subtle mb-2 p-2 rounded-2" required></textarea>
+        <form class="contact-form w-100 d-flex justify-content-center flex-column p-3 mt-2" id="contact-form" (submit)="sendEmail($event)">
+            <input type="text" placeholder="Tu nombre" name="user_name" class="name bg-dark text-light border-danger-subtle mb-4 p-2 rounded-2" required>
+            <input type="email" name="user_email" placeholder="Tu correo" class="email bg-dark text-light border-danger-subtle mb-4 p-2 rounded-2" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Escríbeme un mensaje aquí" class="message bg-dark text-light border-danger-subtle mb-2 p-2 rounded-2" required></textarea>
             <div class="text-center">
-                <input type="submit" value="Enviar" class="send-btn rounded-2 border border-0 btn-send btn-5 w-40">
+                <input type="submit" value="Send" class="send-btn rounded-2 border border-0 btn-send btn-5 w-40">
             </div>
         </form>
     </div>
