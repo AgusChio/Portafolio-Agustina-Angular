@@ -1,0 +1,141 @@
+.ag-format-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ag-format-container::before {
+    content: '<section>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 0rem;
+    left: 2rem;
+}
+
+.ag-format-container::after {
+    content: '</section>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: -2rem;
+    left: 2rem;
+}
+
+.ag-services_box {
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.ag-services_item {
+    margin: 0 15px 30px;
+    overflow: hidden;
+}
+
+.ag-services-item_link {
+    width: 85%;
+    height: 45vh;
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.ag-services-item_link:hover {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.ag-services-item_link:hover .ag-services-item_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.ag-services-item_title {
+    min-height: 40px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFF;
+    z-index: 2;
+    position: relative;
+}
+
+.ag-services-paragraph {
+    margin: 0 0 25px;
+    height: 30vh;
+    overflow: hidden;
+    color: #FFF;
+    z-index: 3;
+    position: relative;
+}
+
+.ag-services-item_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #F59B71;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.ag-services_item:nth-child(2n) .ag-services-item_bg {
+    background-color: #63CCCA;
+}
+
+
+.ag-services_item:nth-child(3n) .ag-services-item_bg {
+    background-color: #FF7474;
+}
+
+
+/* TABLET Y PANTALLAS CHICAS */
+@media screen and (min-width: 700px) and (max-width: 1420px) {
+    .ag-services_box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ag-services_item {
+        width: 45%;
+        margin: 1rem;
+    }
+
+    .ag-services-item_link {
+        width: 70%;
+        max-height: 40vh;
+    }
+}
+
+/* Pantallas grandes */
+@media screen and (min-width: 1420px) and (max-width: 1700px) {
+    .ag-services_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ag-services_item {
+        width: 30%;
+        margin: 1em;
+    }
+
+    .ag-services-item_title {
+        margin: 25px 0 25px;
+    }
+}

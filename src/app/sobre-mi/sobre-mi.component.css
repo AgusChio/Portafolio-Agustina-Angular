@@ -1,0 +1,177 @@
+main {
+    background-color: #191D24;
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #63CCCA;
+    color: #63CCCA;
+    position: relative;
+    border-radius: 49%
+}
+
+.draw-border:hover {
+    box-shadow: inset 0 0 0 4px #F59B71;
+    color: #F59B71;
+    position: relative;
+    border-radius: 49%;
+    transition: color 1s;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 49%;
+    margin-right: 10px;
+}
+
+.button-download {
+    background-color: #F59B71;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ov-btn-slide-left {
+    background: #191D24;
+    color: #F59B71;
+    border: 2px solid #F59B71;
+    padding: 16px 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ov-btn-slide-left:hover {
+    color: #fff;
+}
+
+.ov-btn-slide-left::after {
+    content: "";
+    background: #F59B71;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.ov-btn-slide-left:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+#paragraph1::before {
+    content: '<p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin: -2.5rem 0rem 0rem 1rem
+}
+
+#paragraph1::after {
+    content: '</p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 1rem;
+    left: 2rem;
+}
+
+#paragraph1-1::before {
+    content: '<p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin: -2.5rem 0rem 0rem 1rem
+}
+
+#paragraph1-1::after {
+    content: '</p>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #cac7c7;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 1rem;
+    right: 20rem;
+}
+
+.ancor-github {
+    color: #63CCCA;
+}
+
+
+.color1 {
+    color: #63CCCA;
+}
+
+.color2 {
+    color: #FF7474;
+}
+
+
+@media screen and (min-width: 929px) and (max-width: 1700px) {
+
+    .paragraph-body {
+        width: 88% !important;
+        margin: auto;
+    }
+
+    .paragraph-body::after {
+        margin-top: 1.5rem;
+        left: 22rem;
+    }
+
+    .container-paragraph-aboutme {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #paragraph1 {
+        width: 48%;
+        padding: 1rem;
+    }
+
+    #paragraph1-1 {
+        width: 48%;
+        padding: 1rem;
+    }
+
+    #paragraph1::after {
+        margin-top: 2rem;
+        left: 18rem;
+    }
+
+    #paragraph1-1::after {
+        margin-top: 2rem;
+        left: 55rem !important;
+    }
+
+}

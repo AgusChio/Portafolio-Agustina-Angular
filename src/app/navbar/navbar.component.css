@@ -1,0 +1,110 @@
+.logo-AC {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.navbar-toggler{
+    background-color: rgb(53, 53, 53)
+}
+
+html::before {
+    content: '<html>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #c5c5c5;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 9rem;
+    left: 1rem;
+}
+
+html::after {
+    content: '</html>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #c5c5c5;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 4rem;
+    left: 1rem;
+}
+
+
+
+body::before {
+    content: '<body>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #c5c5c5;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 14rem;
+    left: 2.5rem;
+}
+
+body::after {
+    content: '</body>';
+    font-family: 'Genos', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    color: #c5c5c5;
+    font-size: 1.4rem;
+    position: absolute;
+    margin-top: 3.5rem;
+    left: 2.5rem;
+}
+
+
+a.izdadcha {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: #c35f5f;
+    padding: 0 0 6px;
+}
+
+a.izdadcha:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: #c35f5f;
+    transition: left .8s;
+}
+
+a.izdadcha:hover:after {
+    left: 0;
+}
+
+
+@media screen and (min-width: 929px) and (max-width: 1700px) {
+    .navbar,
+    .navbar-collapse {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 20;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        margin: 10rem 0rem 0rem 0rem;
+    }
+
+    .navbar {
+        width: 15%;
+        height: 100vh;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5em;
+        padding-bottom: 0;
+        border-bottom: 4px solid #464646;
+    }
+}
