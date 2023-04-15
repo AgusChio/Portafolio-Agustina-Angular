@@ -5,5 +5,6 @@ main{
 @media screen and (min-width: 929px) and (max-width: 1700px) {
     main {
         padding-left: 15rem;
+        height: fit-content;
     }
 }
