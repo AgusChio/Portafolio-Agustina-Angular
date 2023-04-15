@@ -139,3 +139,43 @@
         margin: 25px 0 25px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .ag-services_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ag-services_item {
+        width: 30%;
+        margin: 1em;
+    }
+
+    .ag-services-item_title {
+        margin: 25px 0 25px;
+    }
+
+    .ag-services-item_link {
+        width: 80%;
+        height: 50vh;
+        max-height: 300px;
+    }
+
+    .ag-services-paragraph {
+        height: 20vh;
+    }
+
+    .ag-services_item_bg {
+        height: 200px;
+        width: 200px;
+        top: -125px;
+        right: -125px;
+    }
+
+    .ag-format-container::before,
+    .ag-format-container::after {
+        font-size: 1.2rem;
+        margin-top: -1.8rem;
+    }
+}
