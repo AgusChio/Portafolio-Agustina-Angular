@@ -1,4 +1,4 @@
-import { Component, HostListener  } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-to-top',
@@ -9,7 +9,13 @@ export class ScrollToTopComponent {
 
   scrollThreshold = 200;
 
-  
+  ngOnInit() {
+    const scrollTop = document.getElementById('scroll-to-top');
+    if (scrollTop !== null) {
+      scrollTop.classList.add('hidden');
+    }
+  }
+
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
@@ -20,9 +26,11 @@ export class ScrollToTopComponent {
     const scrollTop = document.getElementById('scroll-to-top');
     if (scrollTop !== null) {
       if (scrollY > this.scrollThreshold) {
+        scrollTop.classList.remove('hidden');
         scrollTop.classList.add('show');
       } else {
         scrollTop.classList.remove('show');
+        scrollTop.classList.add('hidden');
       }
     }
   }
