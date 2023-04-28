@@ -12,6 +12,7 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { MainComponent } from './main/main.component';
 import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.component';
+import { RedesSocialesComponent } from './redes-sociales/redes-sociales.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ScrollToTopComponent } from './shared/scroll-to-top/scroll-to-top.compo
     ContactoComponent,
     MainComponent,
     ScrollToTopComponent,
+    RedesSocialesComponent,
   ],
   imports: [
     BrowserModule,

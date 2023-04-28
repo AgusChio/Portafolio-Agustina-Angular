@@ -62,34 +62,6 @@ h1::after {
     left: 2rem;
 }
 
-/* button social */
-.draw-border {
-    box-shadow: inset 0 0 0 4px #63CCCA;
-    color: #63CCCA;
-    position: relative;
-    border-radius: 49%
-}
-
-.draw-border:hover {
-    box-shadow: inset 0 0 0 4px #F59B71;
-    color: #F59B71;
-    position: relative;
-    border-radius: 49%;
-    transition: color 1s;
-}
-
-.btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    height: 3.2rem;
-    width: 3.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 49%;
-    margin-right: 10px;
-}
 
 
 
